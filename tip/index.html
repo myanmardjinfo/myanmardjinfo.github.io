@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dj Tip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!--suppress CssUnusedSymbol -->
+    <style>
+        header {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .sticky + .content {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<main>
+    <header id="header" class="w3-bar w3-black w3-card-4 w3-teal">
+        <h3>Dj Tip</h3>
+    </header>
+ <img src="cover.png" alt="Girl in a jacket" style="width:100%;height:100%;"> 
+
+
+    <div class="content">
+        <p class="w3-large">About !</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda eius ipsam odio odit
+                provident, quos? Doloremque eum expedita quas quod velit? Assumenda dolor fuga nesciunt, optio repellat
+                sint voluptate.</p>
+    </div>
+
+
+<div class="content">
+<p class="w3-large">Contant</p>
+<a href="https://www.facebook.com/profile.php?id=100073653777911&mibextid=ZbWKwL">
+<button class="w3-button w3-black w3-mobile w3-round-large" type="submit">Facebook</button></a>
+
+<a href="tel:+9509428225955">
+<button class="w3-button w3-black w3-mobile w3-round-large" type="submit">Phone Call</button></a>
+
+</div>
+
+
+
+
+ <div id="contents" class="content">
+<p class="w3-large">Photo</p>
+        <div class="w3-row w3-animate-top">
+            <div class="w3-col l2 m4 s6">
+                <div class="w3-card w3-round-xlarge w3-center w3-margin">
+                    <img src="logo1.png" style="width:150px;height:150px;" alt="fruit"/>
+                </div>
+            </div>
+
+            <div class="w3-col l2 m4 s6">
+                <div class="w3-card w3-round-xlarge w3-center w3-margin">
+                    <img src="logo2.png" style="width:150px;height:150px; alt="fruit"/>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="w3-card-4">
+            <header class="w3-container w3-light-grey">
+                <h3>Name</h3>
+            </header>
+            <div class="w3-container">
+                <p>Sai Win Tip (Dj Tip)</p>
+            </div>
+        </div>
+	<div class="w3-card-4">
+            <header class="w3-container w3-light-grey">
+                <h3>Birthday</h3>
+            </header>
+            <div class="w3-container">
+                <p>27/6/1995</p>
+            </div>
+        </div>	
+	<div class="w3-card-4">
+            <header class="w3-container w3-light-grey">
+                <h3>Genre</h3>
+            </header>
+            <div class="w3-container">
+                <p>EDM,Hard Dance,Vina,Other...</p>
+            </div>
+        </div>	
+
+
+
+     <div class="w3-panel w3-black w3-hover-shadow w3-center">
+            <p>Myanmar Dj Info.</p>
+        </div>
+
+
+    <script type="text/javascript">
+        window.onscroll = function () {
+            keepHeader()
+        };
+
+        let header = document.getElementById("header");
+        let sticky = header.offsetTop;
+
+        function keepHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</main>
+</html>
